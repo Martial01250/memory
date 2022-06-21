@@ -13,9 +13,9 @@ let imgs = ["./imgs/007.png",
 let cards = document.querySelectorAll(".card");
 
 
-cards.forEach((poke)=>{
-    poke.addEventListener("click", ()=> {
-        console.log(poke);  
+cards.forEach((pokeCard)=>{
+    pokeCard.addEventListener("click", ()=> {
+        console.log(pokeCard);  
     })
 //   card.style.backgroundImage = "url(" + imgs[0] + ")";
  });

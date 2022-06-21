@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#areaGame{
+        display: grid;
+        width: 90%;
+        height: 90%;
+        margin: 0 auto;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100 repeat(5, 50px);
+        grid-template-areas:
+          "10 11 12"
+          "7 8 9 "
+          "4 5 6 "
+          "1 2 3" 
+          "score";
+        border: 2px solid rgb(56, 55, 56);
+        border-radius: 20px;
+        align-items: center; 
+        background-color: aqua;  
+}
+
+.card{
+    background-size: cover;
+    background-color:blanchedalmond;
+    margin: 15px;
+    width: 80%;
+    height: 80%;
+}
+
+#score{
+    margin-left: 10px;
+    height: 90%;
+    width: 390%;
+}

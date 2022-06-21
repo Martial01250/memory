@@ -1,4 +1,6 @@
 * {
+  color: aliceblue;
+  font-size: 40px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;  
@@ -8,6 +10,7 @@ body{
     width: 100vw;
 }
 #container{
+  background-color: rgb(58, 58, 58);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,22 +31,47 @@ body{
           "4 5 6 "
           "1 2 3" 
           "score";
-        border: 2px solid rgb(56, 55, 56);
+        border: 2px solid rgb(253, 1, 253);
         border-radius: 20px;
         align-items: center; 
-        background-color: aqua;  
+        background-image: url(./imgs/92.png); 
 }
 
 .card{
+  border: 1px solid yellow;
+  border-radius: 34px;
     background-size: cover;
-    background-color:blanchedalmond;
+    background-color:rgb(223, 86, 7);
     margin: 15px;
     width: 80%;
     height: 80%;
 }
 
 #score{
-    margin-left: 10px;
-    height: 90%;
-    width: 390%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid white;
+  margin-left: 10px;
+  height: 90%;
+  width: 390%;
+}
+.Neon1{
+  animation: flicker 1.5s infinite alternate;
+}
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  }
+  20%, 24%, 55% {       
+      text-shadow: none;
+  }
 }

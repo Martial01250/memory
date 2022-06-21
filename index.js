@@ -5,9 +5,9 @@ let scor = 0;
 
 score.textContent = scor ;
 
-div.forEach((item) => {
-  item.style.outline = "2px yellow solid";
-});
+// div.forEach((item) => {
+//   item.style.outline = "2px yellow solid";
+// });
 let imgs = ["./imgs/007.png",
             "./imgs/010.png",
             "./imgs/025.png",
@@ -48,9 +48,8 @@ cards.forEach((pokeCard,index)=>{
         if(pokeCard == cardDiv1 || pokeCard == cardDiv2 || cardOk.includes(pokeCard)) {
             return
         }
-          
+
         card = pokeCard.style.backgroundImage = "url(" + imgRandom[index] + ")";
-        
         clickCountPoke ++;
         if(clickCountPoke == 1){
             card1 = card;
@@ -77,12 +76,10 @@ cards.forEach((pokeCard,index)=>{
                     cardDiv2.style.backgroundImage = 'none';
                     clickCountPoke = 0;
                     cardDiv1 = null;
-                    cardDiv2 = null;
-             
-                    
+                    cardDiv2 = null;  
                   
                 }
-            },500)
+            },300)
 
 
            
